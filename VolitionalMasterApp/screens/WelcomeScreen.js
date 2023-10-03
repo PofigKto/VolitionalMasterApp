@@ -17,6 +17,20 @@ const WelcomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Регистрация</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('ExerciseList')}
+      >
+        <Text style={styles.buttonText}>Упражнения</Text>
+      </TouchableOpacity>
+
+      {/* Добавляем новую кнопку для перехода на экран трекинга */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Tracking')}
+      >
+        <Text style={styles.buttonText}>Мой прогресс</Text>
+      </TouchableOpacity>
     </View>
   );
 };
